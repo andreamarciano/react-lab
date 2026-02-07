@@ -1,0 +1,115 @@
+.customToast {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 1065;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s ease;
+    overflow: hidden;
+    width: 24rem;
+}
+
+.add {
+    background-color: #28a745;
+}
+
+.update {
+    background-color: #28a745;
+}
+
+.clone {
+    background-color: #0dcaf0;
+}
+
+.delete {
+    background-color: #dc5635;
+}
+
+.error {
+    background-color: #d42b3c;
+}
+
+.errorSpan {
+    font-weight: 600;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.clickable:hover {
+    background-color: #218838;
+}
+
+.clone.clickable:hover {
+    background-color: #31d0f6;
+}
+
+.toastSub {
+    font-size: 0.8rem;
+    color: #d4edda;
+    margin-top: 0.25rem;
+}
+
+.closeBtn {
+    position: absolute;
+    top: -0.2rem;
+    right: -0.2rem;
+    transform: scale(0.65);
+}
+
+.progressBar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.8);
+    animation-name: shrink;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.15);
+    margin: 0.5rem 0;
+}
+
+.extraSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding-top: 0.25rem;
+}
+
+.extraText {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.secondaryAction {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.secondaryAction:hover {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+@keyframes shrink {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0%;
+    }
+}
